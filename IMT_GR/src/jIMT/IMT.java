@@ -89,6 +89,17 @@ public class IMT extends javax.swing.JFrame {
         txtResult.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtResult.setText("Ваш результат");
 
+        procProgressBar.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+                procProgressBarAncestorAdded(evt);
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+                procProgressBarAncestorRemoved(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -219,6 +230,14 @@ public class IMT extends javax.swing.JFrame {
          }
         
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void procProgressBarAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_procProgressBarAncestorAdded
+        // TODO add your handling code here:
+    }//GEN-LAST:event_procProgressBarAncestorAdded
+
+    private void procProgressBarAncestorRemoved(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_procProgressBarAncestorRemoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_procProgressBarAncestorRemoved
 
     /**
      * @param args the command line arguments
