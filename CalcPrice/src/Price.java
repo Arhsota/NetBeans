@@ -29,13 +29,30 @@ public class Price extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        textArea1 = new java.awt.TextArea();
+        jPanel2 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         txtSrcPrice = new javax.swing.JTextField();
         txtSrcWeight = new javax.swing.JTextField();
         butCalc = new javax.swing.JButton();
+        textArea2 = new java.awt.TextArea();
+        textArea3 = new java.awt.TextArea();
         txtResult = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Вычисление стоимости");
 
         txtSrcPrice.setText("Введите цену");
         txtSrcPrice.addActionListener(new java.awt.event.ActionListener() {
@@ -44,7 +61,7 @@ public class Price extends javax.swing.JFrame {
             }
         });
 
-        txtSrcWeight.setText("Введите вес");
+        txtSrcWeight.setText("Введите вес в гр.");
         txtSrcWeight.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtSrcWeightActionPerformed(evt);
@@ -66,7 +83,7 @@ public class Price extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(txtSrcPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 64, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 119, Short.MAX_VALUE)
                 .addComponent(txtSrcWeight, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(42, 42, 42))
             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -86,29 +103,40 @@ public class Price extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        txtResult.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtResult.setText("Результат здесь");
+
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Стоимость 1 КГ");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(44, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(42, 42, 42))
             .addGroup(layout.createSequentialGroup()
-                .addGap(119, 119, 119)
-                .addComponent(txtResult, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(117, 117, 117)
+                        .addComponent(txtResult, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(128, 128, 128)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 29, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(25, 25, 25))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(32, 32, 32)
+                .addGap(34, 34, 34)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(txtResult, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(77, Short.MAX_VALUE))
+                .addContainerGap(50, Short.MAX_VALUE))
         );
 
         pack();
@@ -116,7 +144,8 @@ public class Price extends javax.swing.JFrame {
 
     private void butCalcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butCalcActionPerformed
         // TODO add your handling code here:
-              
+        price = Double.parseDouble(txtSrcPrice.getText());   
+        weight = Double.parseDouble(txtSrcWeight.getText());
         pricekg = (price * 1000)/weight;
         txtResult.setText(Double.toString(pricekg));
         
@@ -124,12 +153,12 @@ public class Price extends javax.swing.JFrame {
 
     private void txtSrcPriceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSrcPriceActionPerformed
         // TODO add your handling code here:
-        price = Double.parseDouble(txtSrcPrice.getText());
+       // price = Double.parseDouble(txtSrcPrice.getText());
     }//GEN-LAST:event_txtSrcPriceActionPerformed
 
     private void txtSrcWeightActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSrcWeightActionPerformed
         // TODO add your handling code here:
-        weight = Double.parseDouble(txtSrcWeight.getText());
+       // weight = Double.parseDouble(txtSrcWeight.getText());
     }//GEN-LAST:event_txtSrcWeightActionPerformed
 
     /**
@@ -169,7 +198,12 @@ public class Price extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton butCalc;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private java.awt.TextArea textArea1;
+    private java.awt.TextArea textArea2;
+    private java.awt.TextArea textArea3;
     private javax.swing.JTextField txtResult;
     private javax.swing.JTextField txtSrcPrice;
     private javax.swing.JTextField txtSrcWeight;
