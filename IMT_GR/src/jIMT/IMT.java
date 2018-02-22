@@ -13,6 +13,7 @@ public class IMT extends javax.swing.JFrame {
     private double weight = 0.0;
     private double length = 0.0;
     private double result;
+    private String res;
 
     /**
      * Creates new form IMT
@@ -197,15 +198,20 @@ public class IMT extends javax.swing.JFrame {
         length = Double.parseDouble(txtComboOneBoxItem.getText());
         weight = Double.parseDouble(txtComboTwoBoxItem.getText());
         result = weight/(length * length);
+        res = Double.toString(result);
+        res = String.format( res,"%.2f ");
          if (result >= 30)
           {
-           txtResult.setText("Жир ");
+//           txtResult.setText("Жир ");
+           res = "Жир " + res ;  
+           txtResult.setText(res);
            System.out.print("Жирный: ");
            System.out.format("%.2f ",result);
           }
         else
          {
-          txtResult.setText("Норма ");   
+          res = "Норма " + res ;  
+          txtResult.setText(res);
           System.out.print ("Норма: ");
           System.out.format("%.2f ",result);
          }
