@@ -148,9 +148,9 @@ public class Price extends javax.swing.JFrame {
         // TODO add your handling code here:
         price = Double.parseDouble(txtSrcPrice.getText());
         weight = Double.parseDouble(txtSrcWeight.getText());
-        pricekg = (price * 1000) / weight;
+        pricekg = Math.round((price * 1000) / weight);
         strPricekg = Double.toString(pricekg);
-        strPricekg = String.format("%s", strPricekg);
+     //   strPricekg = String.format("%.2d", strPricekg);
         txtResult.setText(strPricekg);
 
     }//GEN-LAST:event_butCalcActionPerformed
