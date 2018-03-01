@@ -204,17 +204,17 @@ public class IMT extends javax.swing.JFrame {
          if (result >= 30)
           {
 //           txtResult.setText("Жир ");
-           res = "Жир " + res ;  
+           res = "Высокий: " + res ;  
            txtResult.setText(res);
-           System.out.print("Жирный: ");
-           System.out.format("%.2f ",result);
+//           System.out.print("Жирный: ");
+//           System.out.format("%.2f ",result);
           }
         else
          {
-          res = "Норма " + res ;  
+          res = "Норма: " + res ;  
           txtResult.setText(res);
-          System.out.print ("Норма: ");
-          System.out.format("%.2f ",result);
+//          System.out.print ("Норма: ");
+//          System.out.format("%.2f ",result);
          }
         
     }//GEN-LAST:event_jButton1ActionPerformed
