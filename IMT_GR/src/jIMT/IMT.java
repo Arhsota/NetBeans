@@ -199,8 +199,8 @@ public class IMT extends javax.swing.JFrame {
         length = Double.parseDouble(txtComboOneBoxItem.getText());
         weight = Double.parseDouble(txtComboTwoBoxItem.getText());
         result = weight/(length * length);
-        res = Double.toString(result);
-        res = String.format( res,"%.2f ");
+//        res = Double.toString(result);
+        res = String.format( "%.2f ",result);
          if (result >= 30)
           {
 //           txtResult.setText("Жир ");
