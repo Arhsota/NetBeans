@@ -3,7 +3,7 @@
 <Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
-    <Property name="title" type="java.lang.String" value="&#x418;&#x43d;&#x434;&#x438;&#x43a;&#x430;&#x442;&#x43e;&#x440; &#x43c;&#x430;&#x441;&#x441;&#x44b; &#x442;&#x435;&#x43b;&#x430;"/>
+    <Property name="title" type="java.lang.String" value="&#x418;&#x43d;&#x434;&#x435;&#x43a;&#x441; &#x41c;&#x430;&#x441;&#x441;&#x44b; &#x422;&#x435;&#x43b;&#x430; (&#x418;&#x41c;&#x422;)"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -27,7 +27,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="140" max="-2" attributes="0"/>
               <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="152" max="32767" attributes="0"/>
+              <EmptySpace pref="157" max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
@@ -42,7 +42,7 @@
               <Component id="jButton1" min="-2" pref="56" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="51" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -53,48 +53,57 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
+              <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="1" attributes="0">
-                      <Group type="102" alignment="1" attributes="0">
-                          <Component id="jTextField2" min="-2" pref="75" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="comboOne" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jTextField2" max="32767" attributes="0"/>
+                              <Component id="jTextField1" alignment="1" max="32767" attributes="0"/>
+                              <Component id="jTextField3" alignment="1" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="28" pref="28" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Component id="btnComboOneBox" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace pref="28" max="32767" attributes="0"/>
-                                  <Component id="txtComboOneBoxItem" min="-2" pref="75" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Component id="comboThree" min="-2" pref="47" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="btnComboThreeBox" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Component id="comboTwo" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="btnComboTwoBox" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="comboOne" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="btnComboOneBox" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="txtComboThreeBoxItem" pref="72" max="32767" attributes="0"/>
+                                      <Component id="txtComboOneBoxItem" max="32767" attributes="0"/>
+                                      <Component id="txtComboTwoBoxItem" max="32767" attributes="0"/>
+                                  </Group>
                               </Group>
-                              <Group type="102" attributes="0">
-                                  <Component id="btnComboTwoBox" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                                  <Component id="txtComboTwoBoxItem" max="32767" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="txtResult" min="-2" pref="164" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="91" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
-                          <Component id="jTextField1" min="-2" pref="66" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="comboTwo" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                                  <Component id="txtResult" min="-2" pref="164" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Component id="jScrollPane1" min="-2" pref="232" max="-2" attributes="0"/>
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
-              </Group>
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
-                  <Component id="procProgressBar" min="-2" pref="241" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -102,23 +111,35 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="comboOne" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="btnComboOneBox" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtComboOneBoxItem" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="comboTwo" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="btnComboTwoBox" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtComboTwoBoxItem" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtComboOneBoxItem" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" alignment="1" groupAlignment="3" attributes="0">
+                          <Component id="btnComboOneBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="comboOne" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="txtResult" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="txtComboTwoBoxItem" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnComboTwoBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="comboTwo" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="comboThree" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnComboThreeBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtComboThreeBoxItem" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTextField3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="26" max="32767" attributes="0"/>
+                  <Component id="txtResult" min="-2" pref="37" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="procProgressBar" min="-2" max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -182,30 +203,81 @@
         <Component class="javax.swing.JComboBox" name="comboTwo">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="23">
-                <StringItem index="0" value="50"/>
-                <StringItem index="1" value="51"/>
-                <StringItem index="2" value="52"/>
-                <StringItem index="3" value="53"/>
-                <StringItem index="4" value="54"/>
-                <StringItem index="5" value="55"/>
-                <StringItem index="6" value="56"/>
-                <StringItem index="7" value="57"/>
-                <StringItem index="8" value="58"/>
-                <StringItem index="9" value="59"/>
-                <StringItem index="10" value="60"/>
-                <StringItem index="11" value="65"/>
-                <StringItem index="12" value="70"/>
-                <StringItem index="13" value="75"/>
-                <StringItem index="14" value="80"/>
-                <StringItem index="15" value="85"/>
-                <StringItem index="16" value="86"/>
-                <StringItem index="17" value="87"/>
-                <StringItem index="18" value="88"/>
-                <StringItem index="19" value="89"/>
-                <StringItem index="20" value="90"/>
-                <StringItem index="21" value="95"/>
-                <StringItem index="22" value="100"/>
+              <StringArray count="74">
+                <StringItem index="0" value="50.0"/>
+                <StringItem index="1" value="50.1"/>
+                <StringItem index="2" value="50.2"/>
+                <StringItem index="3" value="50.3"/>
+                <StringItem index="4" value="51"/>
+                <StringItem index="5" value="52"/>
+                <StringItem index="6" value="53"/>
+                <StringItem index="7" value="54"/>
+                <StringItem index="8" value="55"/>
+                <StringItem index="9" value="56"/>
+                <StringItem index="10" value="57"/>
+                <StringItem index="11" value="58"/>
+                <StringItem index="12" value="59"/>
+                <StringItem index="13" value="60"/>
+                <StringItem index="14" value="61"/>
+                <StringItem index="15" value="62"/>
+                <StringItem index="16" value="63"/>
+                <StringItem index="17" value="64"/>
+                <StringItem index="18" value="65"/>
+                <StringItem index="19" value="66"/>
+                <StringItem index="20" value="67"/>
+                <StringItem index="21" value="68"/>
+                <StringItem index="22" value="69"/>
+                <StringItem index="23" value="70"/>
+                <StringItem index="24" value="71"/>
+                <StringItem index="25" value="72"/>
+                <StringItem index="26" value="73"/>
+                <StringItem index="27" value="74"/>
+                <StringItem index="28" value="75"/>
+                <StringItem index="29" value="76"/>
+                <StringItem index="30" value="77"/>
+                <StringItem index="31" value="78"/>
+                <StringItem index="32" value="79"/>
+                <StringItem index="33" value="80"/>
+                <StringItem index="34" value="81"/>
+                <StringItem index="35" value="82"/>
+                <StringItem index="36" value="83"/>
+                <StringItem index="37" value="84"/>
+                <StringItem index="38" value="85"/>
+                <StringItem index="39" value="86"/>
+                <StringItem index="40" value="87"/>
+                <StringItem index="41" value="88"/>
+                <StringItem index="42" value="89"/>
+                <StringItem index="43" value="90"/>
+                <StringItem index="44" value="91"/>
+                <StringItem index="45" value="92"/>
+                <StringItem index="46" value="93"/>
+                <StringItem index="47" value="94"/>
+                <StringItem index="48" value="95"/>
+                <StringItem index="49" value="96"/>
+                <StringItem index="50" value="97"/>
+                <StringItem index="51" value="98"/>
+                <StringItem index="52" value="99"/>
+                <StringItem index="53" value="100"/>
+                <StringItem index="54" value="101"/>
+                <StringItem index="55" value="102"/>
+                <StringItem index="56" value="103"/>
+                <StringItem index="57" value="104"/>
+                <StringItem index="58" value="105"/>
+                <StringItem index="59" value="106"/>
+                <StringItem index="60" value="107"/>
+                <StringItem index="61" value="108"/>
+                <StringItem index="62" value="109"/>
+                <StringItem index="63" value="110"/>
+                <StringItem index="64" value="111"/>
+                <StringItem index="65" value="112"/>
+                <StringItem index="66" value="113"/>
+                <StringItem index="67" value="114"/>
+                <StringItem index="68" value="115"/>
+                <StringItem index="69" value="116"/>
+                <StringItem index="70" value="117"/>
+                <StringItem index="71" value="119"/>
+                <StringItem index="72" value="120"/>
+                <StringItem index="73" value="121"/>
               </StringArray>
             </Property>
           </Properties>
@@ -249,16 +321,101 @@
         </Component>
         <Component class="javax.swing.JTextField" name="txtResult">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="0"/>
+            </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="&#x412;&#x430;&#x448; &#x440;&#x435;&#x437;&#x443;&#x43b;&#x44c;&#x442;&#x430;&#x442;"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JProgressBar" name="procProgressBar">
+        <Component class="javax.swing.JTextField" name="jTextField3">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="18" style="1"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="&#x412;&#x43e;&#x437;&#x440;&#x430;&#x441;&#x442;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="comboThree">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="39">
+                <StringItem index="0" value="18"/>
+                <StringItem index="1" value="19"/>
+                <StringItem index="2" value="20"/>
+                <StringItem index="3" value="21"/>
+                <StringItem index="4" value="22"/>
+                <StringItem index="5" value="23"/>
+                <StringItem index="6" value="24"/>
+                <StringItem index="7" value="25"/>
+                <StringItem index="8" value="26"/>
+                <StringItem index="9" value="27"/>
+                <StringItem index="10" value="28"/>
+                <StringItem index="11" value="29"/>
+                <StringItem index="12" value="30"/>
+                <StringItem index="13" value="31"/>
+                <StringItem index="14" value="32"/>
+                <StringItem index="15" value="33"/>
+                <StringItem index="16" value="34"/>
+                <StringItem index="17" value="35"/>
+                <StringItem index="18" value="36"/>
+                <StringItem index="19" value="37"/>
+                <StringItem index="20" value="38"/>
+                <StringItem index="21" value="39"/>
+                <StringItem index="22" value="40"/>
+                <StringItem index="23" value="50"/>
+                <StringItem index="24" value="51"/>
+                <StringItem index="25" value="52"/>
+                <StringItem index="26" value="53"/>
+                <StringItem index="27" value="54"/>
+                <StringItem index="28" value="55"/>
+                <StringItem index="29" value="56"/>
+                <StringItem index="30" value="57"/>
+                <StringItem index="31" value="58"/>
+                <StringItem index="32" value="59"/>
+                <StringItem index="33" value="60"/>
+                <StringItem index="34" value="61"/>
+                <StringItem index="35" value="62"/>
+                <StringItem index="36" value="63"/>
+                <StringItem index="37" value="64"/>
+                <StringItem index="38" value="65"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnComboThreeBox">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x412;&#x44b;&#x431;&#x440;&#x430;&#x442;&#x44c;"/>
+          </Properties>
           <Events>
-            <EventHandler event="ancestorAdded" listener="javax.swing.event.AncestorListener" parameters="javax.swing.event.AncestorEvent" handler="procProgressBarAncestorAdded"/>
-            <EventHandler event="ancestorRemoved" listener="javax.swing.event.AncestorListener" parameters="javax.swing.event.AncestorEvent" handler="procProgressBarAncestorRemoved"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnComboThreeBoxActionPerformed"/>
           </Events>
         </Component>
+        <Component class="javax.swing.JTextField" name="txtComboThreeBoxItem">
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="jTextAreaAge">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="null"/>
+                </Property>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
       </SubComponents>
     </Container>
     <Component class="javax.swing.JButton" name="jButton1">
