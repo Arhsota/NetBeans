@@ -113,9 +113,13 @@ public class IMT extends javax.swing.JFrame {
             }
         });
 
+        jTextAreaAge.setBackground(new java.awt.Color(240, 240, 240));
         jTextAreaAge.setColumns(20);
+        jTextAreaAge.setLineWrap(true);
         jTextAreaAge.setRows(5);
-        jTextAreaAge.setBorder(null);
+        jTextAreaAge.setText("Выберите данные, нажмите РАССЧИТАТЬ, и принимайте решение");
+        jTextAreaAge.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jTextAreaAge.setOpaque(false);
         jScrollPane1.setViewportView(jTextAreaAge);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -157,7 +161,7 @@ public class IMT extends javax.swing.JFrame {
                                 .addGap(0, 91, Short.MAX_VALUE))))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -187,7 +191,7 @@ public class IMT extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
                 .addComponent(txtResult, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -247,30 +251,72 @@ public class IMT extends javax.swing.JFrame {
         // TODO add your handling code here:
         length = Double.parseDouble(txtComboOneBoxItem.getText());
         weight = Double.parseDouble(txtComboTwoBoxItem.getText());
+        age = Double.parseDouble(txtComboThreeBoxItem.getText());
         result = weight/(length * length);
-      //  resultStr = "qqq";//Double.toString(result);
-         if (result >= 30)
+        
+        if (age >64) {
+          jTextAreaAge.setText("Ваш ИМТ должен быть от 24 до 29, для возраста: " + age);  
+        }
+        
+        if ((age <=64)&&(age>55)) {
+          jTextAreaAge.setText("Ваш ИМТ должен быть от 23 до 28, для возраста: " + age);  
+        }
+        
+        if ((age <=55)&&(age>44)) {
+          jTextAreaAge.setText("Ваш ИМТ должен быть от 22 до 27, для возраста: " + age);  
+        }
+        
+        if ((age <=44)&&(age>34)) {
+          jTextAreaAge.setText("Ваш ИМТ должен быть от 21 до 26, для возраста: " + age);  
+        }
+        
+        if ((age <=34)&&(age>24)) {
+          jTextAreaAge.setText("Ваш ИМТ должен быть от 20 до 25, для возраста: " + age);  
+        }
+        
+        if ((age <=24)&&(age>19)) {
+          jTextAreaAge.setText("Ваш ИМТ должен быть от 19 до 24, для возраста: " + age);  
+        }
+        
+        if (age <=19) {
+          jTextAreaAge.setText("Вы слишком молоды)");  
+        }
+            
+                    
+     //           resultStr = "qqq";//Double.toString(result);
+         if (result >33) 
           {
            txtResult.setBackground(Color.red);
            txtResult.setText(String.format("%.2f", result));
-           System.out.print("Жирный: ");
-           System.out.format("%.2f ",result);
+         //  System.out.print("Жирный: ");
+         //  System.out.format("%.2f ",result);
           }
-         if ((result < 30) && (result >= 20))
+         
+         if ((result <= 33) && (result > 30))
           {
-           txtResult.setBackground(Color.yellow);
+           txtResult.setBackground(Color.magenta);
            txtResult.setText(String.format("%.2f", result));
-           jTextAreaAge.setText("Для возраста ");
-           System.out.print("Жирный: ");
-           System.out.format("%.2f ",result);
           }
-        else
-         {
-          txtResult.setBackground(Color.green);
-          txtResult.setText("Норма " +String.format("%.2f", result));   
-          System.out.print ("Норма: ");
-          System.out.format("%.2f ",result);
-         }
+           
+         if ((result <= 30) && (result > 25))
+          {
+           txtResult.setBackground(Color.cyan);
+           txtResult.setText(String.format("%.2f", result));  
+          }   
+         
+         if ((result <= 25) && (result > 19))
+          {
+           txtResult.setBackground(Color.green);
+           txtResult.setText(String.format("%.2f", result));  
+          }   
+         
+         if (result <= 19)
+          {
+           txtResult.setBackground(Color.red);
+           txtResult.setText(String.format("%.2f", result));  
+          }   
+        
+        
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
